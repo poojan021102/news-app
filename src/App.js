@@ -17,7 +17,7 @@ function App() {
         height = {5}
         onLoaderFinished={() => setProgress(0)}
       />
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<MainNewsComponent key = "General1" pageSize={12} category="General" setProgress = {setProgress}/>} />
         <Route path="/General" element={<MainNewsComponent key = "General2" pageSize={12} category="General" setProgress = {setProgress}/>} />
