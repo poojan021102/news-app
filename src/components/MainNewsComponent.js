@@ -8,7 +8,7 @@ function MainNewsComponent({ pageSize, category,setProgress }) {
     const [PageNumber, setPageNumber] = useState(1);
     const [TotalPages, setTotalPages] = useState(0);
     useEffect( () => {
-        document.title = category
+        document.title = category[0].toUpperCase() + category.substring(1);
         setProgress(20);
         setProgress(40);
         setProgress(50); 

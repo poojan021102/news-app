@@ -19,14 +19,17 @@ function App() {
       />
       <Navbar/>
       <Routes>
-        <Route path="/" element={<MainNewsComponent key = "General1" pageSize={12} category="General" setProgress = {setProgress}/>} />
-        <Route path="/General" element={<MainNewsComponent key = "General2" pageSize={12} category="General" setProgress = {setProgress}/>} />
-        <Route path="/Business" element={<MainNewsComponent key = "Business" pageSize={12} category="Business" setProgress = {setProgress}/>} />
-        <Route path="/Entertainment" element={<MainNewsComponent key = "Entertainment" pageSize={12} category="Entertainment" setProgress = {setProgress}/>} />
-        <Route path="/Health" element={<MainNewsComponent key = "Health" pageSize={12} category="Health"setProgress = {setProgress} />} setProgress = {setProgress}/>
-        <Route path="/Science" element={<MainNewsComponent key = "Science" pageSize={12} category="Science" setProgress = {setProgress}/>} />
-        <Route path="/Sports" element={<MainNewsComponent key = "Sports" pageSize={12} category="Sports" setProgress = {setProgress}/>} />
-        <Route path="/Technology" element={<MainNewsComponent key = "Technology" pageSize={12} category="Technology" setProgress = {setProgress}/>} />
+        <Route path="/" element={<MainNewsComponent key = "General1" pageSize={12} category="news" setProgress = {setProgress}/>} />
+        <Route path="/sport" element={<MainNewsComponent key = "sport" pageSize={12} category="sport" setProgress = {setProgress}/>} />
+        <Route path="/tech" element={<MainNewsComponent key = "tech" pageSize={12} category="tech" setProgress = {setProgress}/>} />
+        <Route path="/world" element={<MainNewsComponent key = "world" pageSize={12} category="world" setProgress = {setProgress}/>} />
+        <Route path="/finance" element={<MainNewsComponent key = "finance" pageSize={12} category="finance" setProgress = {setProgress}/>} />
+        <Route path="/politics" element={<MainNewsComponent key = "politics" pageSize={12} category="politics" setProgress = {setProgress}/>} />
+        <Route path="/business" element={<MainNewsComponent key = "business" pageSize={12} category="business" setProgress = {setProgress}/>} />
+        <Route path="/economics" element={<MainNewsComponent key = "economics" pageSize={12} category="economics" setProgress = {setProgress}/>} />
+        <Route path="/entertainment" element={<MainNewsComponent key = "entertainment" pageSize={12} category="entertainment" setProgress = {setProgress}/>} />
+        <Route path="/beauty" element={<MainNewsComponent key = "beauty" pageSize={12} category="beauty" setProgress = {setProgress}/>} />
+        <Route path="/gaming" element={<MainNewsComponent key = "gaming" pageSize={12} category="gaming" setProgress = {setProgress}/>} />
       </Routes>
     </>
   );
